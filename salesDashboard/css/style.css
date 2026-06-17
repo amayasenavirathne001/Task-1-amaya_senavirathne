@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.92),
+      rgba(255, 255, 255, 0.425)
+    ),
+    url("../images/analytics-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  color: #0f3d57;
+  padding: 25px;
+  text-align: center;
+}
+
+
+header h1 {
+  color: #092b3d;
+  font-size: 2rem;
+}
+
+header p {
+  color: #2c5a73;
+  font-weight: 500;
+}
+
+nav {
+  background: #092b3d;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+main {
+  width: 92%;
+  margin: 25px auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #0f3d57;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.content-box {
+  background: white;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+.content-box h2 {
+  color: #0f3d57;
+  margin-bottom: 12px;
+}
+
+table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #0f3d57;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+footer {
+  background: #092b3d;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav a {
+    margin: 15px;
+  }
+
+  header h1 {
+    font-size: 34px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  main {
+    width: 85%;
+  }
+}

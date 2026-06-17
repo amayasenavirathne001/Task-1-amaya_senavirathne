@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Retail Sales Analytics Dashboard</h1>
+  <p>Responsive frontend project using HTML, CSS and JavaScript</p>
+</header>
+
+<nav>
+  <a href="index.html">Dashboard</a>
+  <a href="products.html">Products</a>
+  <a href="regions.html">Regions</a>
+  <a href="about.html">About</a>
+</nav>
+
+
+<main>
+  <section class="cards">
+    <div class="card">
+      <h2>💰</h2>
+      <h3>Total Revenue</h3>
+      <p id="totalRevenue">$0.00</p>
+    </div>
+
+    <div class="card">
+      <h2>🛒</h2>
+      <h3>Total Orders</h3>
+      <p id="totalOrders">0</p>
+    </div>
+
+    <div class="card">
+      <h2>📦</h2>
+      <h3>Products Sold</h3>
+      <p id="totalQuantity">0</p>
+    </div>
+
+    <div class="card">
+      <h2>🌍 </h2>
+      <h3>Top Region</h3>
+      <p id="topRegion">-</p>
+    </div>
+  </section>
+
+  <section class="content-box">
+    <h2>Project Overview</h2>
+    <p>
+      This dashboard analyzes retail sales data from the Excel dataset.
+      It summarizes total revenue, total orders, quantity sold and
+      regional sales performance.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Sales Analytics Dashboard</p>
+</footer>
+
+<script src="data/salesData.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

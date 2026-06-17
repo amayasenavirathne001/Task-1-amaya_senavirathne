@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Product Performance</h1>
+</header>
+
+<nav>
+  <a href="index.html">Dashboard</a>
+  <a href="products.html">Products</a>
+  <a href="regions.html">Regions</a>
+  <a href="about.html">About</a>
+</nav>
+
+<main>
+  <section class="content-box">
+    <h2>Product Sales Table</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity Sold</th>
+          <th>Total Revenue</th>
+        </tr>
+      </thead>
+      <tbody id="productTable"></tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Sales Analytics Dashboard</p>
+</footer>
+
+<script src="data/salesData.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
